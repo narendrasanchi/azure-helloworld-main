@@ -1,0 +1,11 @@
+trigger:
+- master
+
+resources:
+  repositories:
+    - repository: template
+      type: git 
+      name: template
+
+jobs:
+- template: common-template.yml@template
